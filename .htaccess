@@ -1,0 +1,14 @@
+# Enable mod_rewrite
+RewriteEngine On
+
+# Hide .php extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+?)$ $1.php [L]
+
+# Optional: Force www (or remove www if preferred)
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# Optional: Prevent directory listing
+Options -Indexes

@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.03);
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.Pending {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.Confirmed {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.Cancelled {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+form .form-control {
+    border-radius: 12px;
+}
+
+.btn {
+    border-radius: 12px;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 767px) {
+    h2, h3, h4 {
+        font-size: 1.25rem;
+    }
+
+    .card-img-top {
+        height: 160px;
+    }
+}
